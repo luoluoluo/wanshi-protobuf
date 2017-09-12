@@ -17,6 +17,10 @@ class RegisterRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string email = 1;</code>
      */
     private $email = '';
+    /**
+     * Generated from protobuf field <code>string name = 2;</code>
+     */
+    private $name = '';
 
     public function __construct() {
         \GPBMetadata\Account::initOnce();
@@ -41,6 +45,28 @@ class RegisterRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->email = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string name = 2;</code>
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Generated from protobuf field <code>string name = 2;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setName($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->name = $var;
 
         return $this;
     }

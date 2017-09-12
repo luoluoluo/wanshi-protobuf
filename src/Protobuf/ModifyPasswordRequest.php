@@ -14,9 +14,9 @@ use Google\Protobuf\Internal\GPBUtil;
 class ModifyPasswordRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>int32 uid = 1;</code>
+     * Generated from protobuf field <code>int32 user_id = 1;</code>
      */
-    private $uid = 0;
+    private $user_id = 0;
     /**
      * Generated from protobuf field <code>string old_password = 2;</code>
      */
@@ -32,23 +32,23 @@ class ModifyPasswordRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 uid = 1;</code>
+     * Generated from protobuf field <code>int32 user_id = 1;</code>
      * @return int
      */
-    public function getUid()
+    public function getUserId()
     {
-        return $this->uid;
+        return $this->user_id;
     }
 
     /**
-     * Generated from protobuf field <code>int32 uid = 1;</code>
+     * Generated from protobuf field <code>int32 user_id = 1;</code>
      * @param int $var
      * @return $this
      */
-    public function setUid($var)
+    public function setUserId($var)
     {
         GPBUtil::checkInt32($var);
-        $this->uid = $var;
+        $this->user_id = $var;
 
         return $this;
     }

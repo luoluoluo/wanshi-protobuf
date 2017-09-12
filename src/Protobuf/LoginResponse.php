@@ -18,9 +18,9 @@ class LoginResponse extends \Google\Protobuf\Internal\Message
      */
     private $session_id = '';
     /**
-     * Generated from protobuf field <code>int32 uid = 3;</code>
+     * Generated from protobuf field <code>int32 user_id = 3;</code>
      */
-    private $uid = 0;
+    private $user_id = 0;
 
     public function __construct() {
         \GPBMetadata\Account::initOnce();
@@ -50,23 +50,23 @@ class LoginResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 uid = 3;</code>
+     * Generated from protobuf field <code>int32 user_id = 3;</code>
      * @return int
      */
-    public function getUid()
+    public function getUserId()
     {
-        return $this->uid;
+        return $this->user_id;
     }
 
     /**
-     * Generated from protobuf field <code>int32 uid = 3;</code>
+     * Generated from protobuf field <code>int32 user_id = 3;</code>
      * @param int $var
      * @return $this
      */
-    public function setUid($var)
+    public function setUserId($var)
     {
         GPBUtil::checkInt32($var);
-        $this->uid = $var;
+        $this->user_id = $var;
 
         return $this;
     }

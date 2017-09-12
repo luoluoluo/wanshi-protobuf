@@ -5,36 +5,96 @@
 namespace Protobuf;
 
 /**
- * 业务status code
+ * status code
  *
  * Protobuf enum <code>Protobuf\Code</code>
  */
 class Code
 {
     /**
-     * 0 - 99 系统预留
+     * 0 - 99 系统预留, google.golang.org/grpc/codes
      *
      * Generated from protobuf enum <code>OK = 0;</code>
      */
     const OK = 0;
     /**
-     * 错误的请求
-     *
-     * Generated from protobuf enum <code>Bad_Request = 1;</code>
+     * Generated from protobuf enum <code>Canceled = 1;</code>
      */
-    const Bad_Request = 1;
+    const Canceled = 1;
     /**
-     * 未授权
-     *
-     * Generated from protobuf enum <code>Unauthorized = 2;</code>
+     * Generated from protobuf enum <code>Unknown = 2;</code>
      */
-    const Unauthorized = 2;
+    const Unknown = 2;
     /**
-     * 内部服务器错误 
+     * http 400
      *
-     * Generated from protobuf enum <code>Internal_Server_Error = 3;</code>
+     * Generated from protobuf enum <code>InvalidArgument = 3;</code>
      */
-    const Internal_Server_Error = 3;
+    const InvalidArgument = 3;
+    /**
+     * Generated from protobuf enum <code>DeadlineExceeded = 4;</code>
+     */
+    const DeadlineExceeded = 4;
+    /**
+     * http 404
+     *
+     * Generated from protobuf enum <code>NotFound = 5;</code>
+     */
+    const NotFound = 5;
+    /**
+     * Generated from protobuf enum <code>AlreadyExists = 6;</code>
+     */
+    const AlreadyExists = 6;
+    /**
+     * http 403
+     *
+     * Generated from protobuf enum <code>PermissionDenied = 7;</code>
+     */
+    const PermissionDenied = 7;
+    /**
+     * http 401
+     *
+     * Generated from protobuf enum <code>Unauthenticated = 16;</code>
+     */
+    const Unauthenticated = 16;
+    /**
+     * http 429
+     *
+     * Generated from protobuf enum <code>ResourceExhausted = 8;</code>
+     */
+    const ResourceExhausted = 8;
+    /**
+     * Generated from protobuf enum <code>FailedPrecondition = 9;</code>
+     */
+    const FailedPrecondition = 9;
+    /**
+     * Generated from protobuf enum <code>Aborted = 10;</code>
+     */
+    const Aborted = 10;
+    /**
+     * Generated from protobuf enum <code>OutOfRange = 11;</code>
+     */
+    const OutOfRange = 11;
+    /**
+     * Generated from protobuf enum <code>Unimplemented = 12;</code>
+     */
+    const Unimplemented = 12;
+    /**
+     * http 500
+     *
+     * Generated from protobuf enum <code>Internal = 13;</code>
+     */
+    const Internal = 13;
+    /**
+     * http 503
+     *
+     * Generated from protobuf enum <code>Unavailable = 14;</code>
+     */
+    const Unavailable = 14;
+    /**
+     * Generated from protobuf enum <code>DataLoss = 15;</code>
+     */
+    const DataLoss = 15;
     /**
      * account 服务从100 - 199
      *
