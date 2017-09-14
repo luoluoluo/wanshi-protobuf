@@ -59,20 +59,6 @@ class AccountClient extends \Grpc\BaseStub {
     }
 
     /**
-     * 修改密码
-     * @param \Protobuf\ModifyPasswordRequest $argument input argument
-     * @param array $metadata metadata
-     * @param array $options call options
-     */
-    public function ModifyPassword(\Protobuf\ModifyPasswordRequest $argument,
-      $metadata = [], $options = []) {
-        return $this->_simpleRequest('/protobuf.Account/ModifyPassword',
-        $argument,
-        ['\Protobuf\ModifyPasswordResponse', 'decode'],
-        $metadata, $options);
-    }
-
-    /**
      * 重置密码
      * @param \Protobuf\ResetPasswordRequest $argument input argument
      * @param array $metadata metadata

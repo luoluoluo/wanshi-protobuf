@@ -14,9 +14,9 @@ use Google\Protobuf\Internal\GPBUtil;
 class AuthRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>int32 user_id = 1;</code>
+     * Generated from protobuf field <code>string user_id = 1;</code>
      */
-    private $user_id = 0;
+    private $user_id = '';
     /**
      * Generated from protobuf field <code>string session_id = 2;</code>
      */
@@ -28,8 +28,8 @@ class AuthRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 user_id = 1;</code>
-     * @return int
+     * Generated from protobuf field <code>string user_id = 1;</code>
+     * @return string
      */
     public function getUserId()
     {
@@ -37,13 +37,13 @@ class AuthRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 user_id = 1;</code>
-     * @param int $var
+     * Generated from protobuf field <code>string user_id = 1;</code>
+     * @param string $var
      * @return $this
      */
     public function setUserId($var)
     {
-        GPBUtil::checkInt32($var);
+        GPBUtil::checkString($var, True);
         $this->user_id = $var;
 
         return $this;
