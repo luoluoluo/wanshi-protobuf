@@ -6,4 +6,5 @@ if [[ ! -d "$outpath" ]];then
     mkdir -p $outpath
 fi
 rm -rf $outpath/*
+ls $srcpath
 protoc -I $srcpath --php_out=$outpath --grpc_out=$outpath --plugin=protoc-gen-grpc=/opt/protobuf/bin/grpc_php_plugin $srcpath/*.proto
