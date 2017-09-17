@@ -14,6 +14,10 @@ use Google\Protobuf\Internal\GPBUtil;
 class DeleteProjectRequest extends \Google\Protobuf\Internal\Message
 {
     /**
+     * Generated from protobuf field <code>string user_id = 1;</code>
+     */
+    private $user_id = '';
+    /**
      * Generated from protobuf field <code>string project_id = 2;</code>
      */
     private $project_id = '';
@@ -21,6 +25,28 @@ class DeleteProjectRequest extends \Google\Protobuf\Internal\Message
     public function __construct() {
         \GPBMetadata\Resume::initOnce();
         parent::__construct();
+    }
+
+    /**
+     * Generated from protobuf field <code>string user_id = 1;</code>
+     * @return string
+     */
+    public function getUserId()
+    {
+        return $this->user_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string user_id = 1;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setUserId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->user_id = $var;
+
+        return $this;
     }
 
     /**

@@ -72,4 +72,18 @@ class AccountClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * 发送留言邮件
+     * @param \Protobuf\EmailRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function Email(\Protobuf\EmailRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/protobuf.Account/Email',
+        $argument,
+        ['\Protobuf\EmailResponse', 'decode'],
+        $metadata, $options);
+    }
+
 }

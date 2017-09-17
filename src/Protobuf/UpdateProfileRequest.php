@@ -33,6 +33,10 @@ class UpdateProfileRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string skills = 5;</code>
      */
     private $skills = '';
+    /**
+     * Generated from protobuf field <code>string description = 6;</code>
+     */
+    private $description = '';
 
     public function __construct() {
         \GPBMetadata\Resume::initOnce();
@@ -145,6 +149,28 @@ class UpdateProfileRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->skills = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string description = 6;</code>
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Generated from protobuf field <code>string description = 6;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setDescription($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->description = $var;
 
         return $this;
     }

@@ -9,9 +9,9 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>protobuf.ResumeRequest</code>
+ * Generated from protobuf message <code>protobuf.ProfileRequest</code>
  */
-class ResumeRequest extends \Google\Protobuf\Internal\Message
+class ProfileRequest extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>string user_id = 1;</code>

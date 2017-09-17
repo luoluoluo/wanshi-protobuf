@@ -9,9 +9,9 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>protobuf.ResumesRequest</code>
+ * Generated from protobuf message <code>protobuf.ProfilesRequest</code>
  */
-class ResumesRequest extends \Google\Protobuf\Internal\Message
+class ProfilesRequest extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>int32 page = 1;</code>

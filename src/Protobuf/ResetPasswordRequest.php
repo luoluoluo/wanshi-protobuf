@@ -14,9 +14,9 @@ use Google\Protobuf\Internal\GPBUtil;
 class ResetPasswordRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string Email = 1;</code>
+     * Generated from protobuf field <code>string email = 1;</code>
      */
-    private $Email = '';
+    private $email = '';
 
     public function __construct() {
         \GPBMetadata\Account::initOnce();
@@ -24,23 +24,23 @@ class ResetPasswordRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string Email = 1;</code>
+     * Generated from protobuf field <code>string email = 1;</code>
      * @return string
      */
     public function getEmail()
     {
-        return $this->Email;
+        return $this->email;
     }
 
     /**
-     * Generated from protobuf field <code>string Email = 1;</code>
+     * Generated from protobuf field <code>string email = 1;</code>
      * @param string $var
      * @return $this
      */
     public function setEmail($var)
     {
         GPBUtil::checkString($var, True);
-        $this->Email = $var;
+        $this->email = $var;
 
         return $this;
     }

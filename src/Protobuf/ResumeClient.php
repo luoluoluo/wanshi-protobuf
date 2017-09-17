@@ -18,29 +18,29 @@ class ResumeClient extends \Grpc\BaseStub {
 
     /**
      * 简历列表
-     * @param \Protobuf\ResumesRequest $argument input argument
+     * @param \Protobuf\ProfilesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function Resumes(\Protobuf\ResumesRequest $argument,
+    public function Profiles(\Protobuf\ProfilesRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/protobuf.Resume/Resumes',
+        return $this->_simpleRequest('/protobuf.Resume/Profiles',
         $argument,
-        ['\Protobuf\ResumesResponse', 'decode'],
+        ['\Protobuf\ProfilesResponse', 'decode'],
         $metadata, $options);
     }
 
     /**
      * 简历详情
-     * @param \Protobuf\ResumeRequest $argument input argument
+     * @param \Protobuf\ProfileRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function Resume(\Protobuf\ResumeRequest $argument,
+    public function Profile(\Protobuf\ProfileRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/protobuf.Resume/Resume',
+        return $this->_simpleRequest('/protobuf.Resume/Profile',
         $argument,
-        ['\Protobuf\ResumeResponse', 'decode'],
+        ['\Protobuf\ProfileResponse', 'decode'],
         $metadata, $options);
     }
 
