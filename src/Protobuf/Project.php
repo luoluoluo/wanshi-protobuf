@@ -14,6 +14,10 @@ use Google\Protobuf\Internal\GPBUtil;
 class Project extends \Google\Protobuf\Internal\Message
 {
     /**
+     * Generated from protobuf field <code>string project_id = 1;</code>
+     */
+    private $project_id = '';
+    /**
      * Generated from protobuf field <code>string title = 2;</code>
      */
     private $title = '';
@@ -29,6 +33,28 @@ class Project extends \Google\Protobuf\Internal\Message
     public function __construct() {
         \GPBMetadata\Resume::initOnce();
         parent::__construct();
+    }
+
+    /**
+     * Generated from protobuf field <code>string project_id = 1;</code>
+     * @return string
+     */
+    public function getProjectId()
+    {
+        return $this->project_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>string project_id = 1;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setProjectId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->project_id = $var;
+
+        return $this;
     }
 
     /**
